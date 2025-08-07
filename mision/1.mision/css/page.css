@@ -9,7 +9,7 @@
     min-width: 300px;
 }
 .head .panda{display: flex; align-items: center; font-size: 26px; font-weight: 700; flex: 1; }
-.head .panda .face{width: 40px; aspect-ratio: 1; margin-right: 10px;}
+.head .panda .face{width: 40px; aspect-ratio: 1; margin-right: 8.5px;}
 .head .panda span{font-size: 25.63px; font-weight: 700; line-height: 35px; min-width: 103px; color: #3692ff; text-align: center;}
 .head .login{padding: 11px 42px; background-color: #3692ff; color: #ffffff; font-size: 16px; font-weight: 600; line-height: 26px; border-radius: 12px;}
 
@@ -17,7 +17,7 @@
 .flexwrap{max-width: 1110px; margin: 0 auto; display: flex;}
 .flexwrap .wrap{display: flex; flex-direction: column;padding-block: 40px; gap: 30px;}
 .flexwrap .wrap p{font-size: 37px; font-weight: 700;max-width: 295px; line-height: 56px;}
-.flexwrap .wrap a{background-color: #3692ff; border-radius: 50px; line-height: 50px; width: 357px; text-align: center;}
+.flexwrap .wrap a{background-color: #3692ff; border-radius: 50px; line-height: 50px; width: 357px; text-align: center; color: white;}
 .backimg{background: url(../img/Img_home_top.png) no-repeat center / cover; width: 746px; aspect-ratio: 746 / 340;}
 
 .contentsize{max-width: 988px; aspect-ratio: 988 / 444; margin-inline: auto; background-color: #fcfcfc; display: grid; grid-template-columns: repeat(3 , 1fr);}
