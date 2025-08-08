@@ -11,7 +11,7 @@
 .head .panda{display: flex; align-items: center; font-size: 26px; font-weight: 700; flex: 1; }
 .head .panda .face{width: 40px; aspect-ratio: 1; margin-right: 8.5px;}
 .head .panda span{font-size: 25.63px; font-weight: 700; line-height: 35px; min-width: 103px; color: #3692ff; text-align: center;}
-.head .login{padding: 11px 42px; background-color: #3692ff; color: #ffffff; font-size: 16px; font-weight: 600; line-height: 26px; border-radius: 12px;}
+.head .login{min-width: 128px; text-align: center; background-color: #3692ff; color: #ffffff; font-size: 16px; font-weight: 600; line-height: 48px; border-radius: 12px;}
 
 .section{background-color: #cfe5ff; padding-top: 200px;}
 .flexwrap{max-width: 1110px; margin: 0 auto; display: flex;}
@@ -37,7 +37,8 @@ footer .foot-wrap{display: flex; align-items: center; max-width: 1110px; margin-
 footer .foot .foot-wrap .foot-img{background: url(../img/Img_home_bottom.png); width: 746px; aspect-ratio: 746 / 397;}
 footer .foot .foot-wrap p{width: 313px;}
 footer .foot-bg{background-color: #111827; padding-block: 30px 110px;}
-footer .foot-bg .foot-copyright{display: flex; justify-content: space-between; max-width: 1120px; margin-inline: auto; height: 20px; }
+footer .foot-bg .foot-copyright{display: flex; justify-content: space-between; max-width: 1120px; margin-inline: auto; height: 20px;}
+
 footer .foot-copyright .copyright:nth-child(2) a:nth-child(1){margin-right: 23.24px;}
 footer .foot-copyright .ikon{display: flex; gap: 12px;}
 footer .foot-copyright .ikon li a{ display: inline-block; width: 20px; aspect-ratio: 1;}

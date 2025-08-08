@@ -1,5 +1,9 @@
 /* font area */
 .intro .cont-wrap span{font-family: "Abhaya Libre", serif;}
+.head .login, .section .wrap, .intro .padding-box strong, .intro .padding-box p, .foot .foot-wrap, .foot .foot-copyright{
+    font-family: 'Pretendard-Regular';
+}
+.head .face span{font-family: 'ROKAF Sans';}
 /* palette */
 
 
