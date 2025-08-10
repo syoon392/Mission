@@ -126,3 +126,272 @@ console.log(result2);
 console.log(result3);
 console.log(result4);
 console.log(result5)
+
+
+// 각 등급별 가격
+let VIPPrice = 15;
+let RPrice = 13;
+let SPrice = 10;
+let APrice = 8;
+
+// 각 등급에 맞는 가격을 출력하는 checkPrice() 함수
+function checkPrice(grade) {
+  switch (grade) {
+    case 'VIP':
+      console.log(`${grade}석은 ${VIPPrice}만 원입니다.`);
+      break;
+    case 'R':
+      console.log(`${grade}석은 ${RPrice}만 원입니다.`);
+      break;
+    case 'S':
+      console.log(`${grade}석은 ${SPrice}만 원입니다.`);
+      break;
+    case 'A':
+      console.log(`${grade}석은 ${APrice}만 원입니다.`);
+      break;
+    default:
+      console.log('VIP, R, S, A 중에서 하나를 선택해 주세요.');
+  }
+}
+
+// 테스트 코드
+checkPrice('R');
+checkPrice('VIP');
+checkPrice('S');
+checkPrice('A');
+checkPrice('B');
+
+// 여기에 코드를 작성하세요
+for(let a = 1; a <= 50; a++){
+  console.log(a * 2);
+}
+for (let i = 2; i <= 100; i += 2) {
+  console.log(i);
+}
+
+function printTriangle(height) {
+	// 여기에 코드를 작성하세요
+    let Ikon = '';
+	for (let X = 0; X < height; X++){
+	  Ikon += '*';
+	  console.log(Ikon);
+	}
+}
+
+// 테스트 코드
+console.log('높이: 1');
+printTriangle(1);
+
+console.log('높이: 3');
+printTriangle(3);
+
+console.log('높이: 5');
+printTriangle(5);
+
+const N = 180;
+let i = 1;
+let count = 0;
+
+while (i <= N) {
+  if (N % i === 0) {
+    console.log(i);
+    count++;
+  }
+  i += 1;
+}
+
+console.log(`${N}의 약수는 총 ${count}개입니다.`);
+
+// ---------------------------------------------------------
+
+
+let myVoca = {
+	function: '함수',
+	variable: '변수',
+	constant: '상수',
+	local: '지역의',
+	global: '전반적인',
+};
+delete myVoca.function;
+delete myVoca.constant;
+delete myVoca.local;
+
+// 1. 이미 외운 단어 3개를 삭제해 주세요
+// 여기에 코드를 작성하세요
+
+
+console.log(myVoca);
+console.log(myVoca.constant);
+
+
+// 2. 오늘 외울 단어 4개를 추가해 주세요
+// 여기에 코드를 작성하세요
+myVoca.extend = '확장하다';
+myVoca.export = '내보내다';
+myVoca.import = '불러오다';
+myVoca['default value'] = '기본값';
+// myVoca.'default value' = '기본';
+
+
+console.log(myVoca);
+console.log(myVoca.export);
+
+
+// 3. default value의 뜻을 출력해 주세요
+console.log(myVoca['default value'])
+// 여기에 코드를 작성하세요
+
+
+// ---------------------------------------------------------
+
+
+let myVoca = {
+  // 코드를 작성해 주세요.
+  addVoca: function(name, int){
+    myVoca[name] = int;
+  },
+  deleteVoca: function(name){
+    delete myVoca[name];
+  },
+  printVoca: function(name){
+    console.log(`"${name}"의 뜻은 "${myVoca[name]}"입니다.`);
+  }
+};
+
+// addVoca메소드 테스트 코드
+myVoca.addVoca('parameter', '매개 변수');
+myVoca.addVoca('element', '요소');
+myVoca.addVoca('property', '속성');
+console.log(myVoca);
+
+// deleteVoca메소드 테스트 코드
+myVoca.deleteVoca('parameter');
+myVoca.deleteVoca('element');
+console.log(myVoca);
+
+// printVoca메소드 테스트 코드
+myVoca.printVoca('property');
+
+
+// 
+let pass = '축하합니다! 합격입니다!';
+let npass = '아쉽지만 불합격입니다...';
+
+let hyesoonScore = {
+	'데이터 모델링의 이해': 10,
+	'데이터 모델과 성능': 8,
+	'SQL 기본': 22,
+	'SQL 활용': 18,
+	'SQL 최적화 기본 원리': 20,
+};
+
+let minsoonScore = {
+	'데이터 모델링의 이해': 14,
+	'데이터 모델과 성능': 8,
+	'SQL 기본': 12,
+	'SQL 활용': 4,
+	'SQL 최적화 기본 원리': 16,
+};
+function passChecker(scoreObject) {
+	// 여기에 코드를 작성하세요
+let totalscore = 0;
+  for(let score in scoreObject){
+    totalscore += scoreObject[score];
+  }if (totalscore >= 60){
+    console.log(pass);
+  }else{
+    console.log(npass);
+  }
+}
+    
+   
+passChecker(hyesoonScore);
+passChecker(minsoonScore);
+
+
+let today = new Date(2112, 7, 24);// 2112년 8월 24일
+let jaeSangStart = new Date(2109, 6, 1); // 2109년 7월 1일
+
+function workDayCalc(startDate) {
+	// 여기에 코드를 작성하세요
+	let timeDiff = today.getTime() - startDate.getTime();
+	let dayDiff = timeDiff / 1000 / 60 / 60 / 24;
+  console.log(`오늘은 입사한 지 ${dayDiff + 1}일째 되는 날 입니다.`);
+}
+
+workDayCalc(jaeSangStart);
+
+// 이 배열에서 홀수를 구해 출력
+
+const nums = [1, 3, 4, 6, 9, 10, 12];
+function getMultiplesOfThree(Array){
+  const X = [];
+  for(let a = 0 ; a < Array.length; a++){
+    if(Array[a] % 3 === 0){
+      X[X.length] = Array[a];
+    }
+  }
+  return X;
+}
+console.log(getMultiplesOfThree(nums)); 
+// [3, 6, 9, 12]가 출력되어야 함
+// -------------------------------------------
+
+
+let celsiusTemps = [27, 25, 26, 22, 28, 27, 21];
+let fahrenheitTemps = [];
+
+// 여기에 코드를 작성하세요
+for(i = 0; i < celsiusTemps.length; i++){
+  let F = 0;
+  F = (celsiusTemps[i] * 9 / 5) + 32;
+  fahrenheitTemps[i] = F;
+//   for (let i = 0; i < celsiusTemps.length; i++) {
+//   fahrenheitTemps[i] = (celsiusTemps[i] * 9 / 5) + 32;} (간단하게)
+}
+
+// fahrenheitTemps 테스트
+console.log(fahrenheitTemps);
+
+
+// -----------------------------------------------
+let fruits = ['레몬', '토마토', '딸기', '바나나'];
+let ages = [20, 24, 25, 29, 30, 33];
+let numbers = [];
+
+// fruits 배열에 '토마토'를 삭제하고 그 자리에 '사과', '청포도' 를 추가해 주세요
+fruits.splice(1, 1 , '사과', '청포도');
+
+
+// fruits 배열의 첫 번째 요소를 삭제해 주세요
+fruits.splice(0, 1);
+
+
+// ages 배열에 마지막 요소를 삭제해 주세요
+ages.splice(5, 1);
+
+
+// ages 배열의 2번, 3번 인덱스를 26, 28로 변경해 주세요
+ages.splice(2, 2 , '26','28');
+
+
+// numbers 배열에 1, 2, 3, 5, 8, 9를 순서대로 추가해 주세요
+numbers.splice(0, 0 , 1, 2, 3, 5, 8, 9);
+
+
+// 반복문을 활용해서 numbers 배열의 요소들 중 홀수를 모두 삭제해 주세요
+for(let i = 0; i < numbers.length; i++){
+  if(numbers[i] % 2 !== 0){
+    numbers.splice(i, 1);
+    i--;
+  }
+}
+
+
+// 테스트 코드
+console.log(fruits[1]);
+console.log(fruits[0]);
+console.log(ages[ages.length - 1]);
+console.log(ages[3]);
+console.log(numbers[3]);
+console.log(numbers);
