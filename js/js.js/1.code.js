@@ -84,6 +84,19 @@ console.log('이자는 ' + myInterest + '원 입니다.');
 console.log('최종 받을 금액은 ' + totalMoney + '원 입니다.');
 
 
+// 파보나치 수열237
+let current = 1;
+let previous = 0;
+
+for (let i = 1; i <= 50; i++) {
+  console.log(current);
+  let temp = previous;  // previous를 임시 보관소 temp에 저장
+  previous = current;
+  current = current + temp;  // temp에는 기존 previous 값이 저장돼 있음
+}
+// --------------------------------------------
+
+
 // 나의 나이와, 나의 성별을 저장하는 변수
 let myAge = 26;
 let myGender = 'male';
@@ -395,3 +408,58 @@ console.log(ages[ages.length - 1]);
 console.log(ages[3]);
 console.log(numbers[3]);
 console.log(numbers);
+
+// --------------------------------
+
+let groups = [
+	['영준', '캡틴'], 
+	['태순', '우재'],
+	['재훈', '지웅'],
+	['윤형', '동욱'],
+	['규식', '소원'],
+];
+
+let teams = [
+	[],
+	[],
+];
+
+// 여기에 코드를 작성하세요
+for (let i = 0; i < groups.length; i++){
+  teams[0].push(groups[i][0]);
+  teams[1].push(groups[i][1]);
+}
+
+// 테스트 코드
+console.log(teams[0]);
+console.log(teams[1]);
+
+// ----------------------------
+// 아래 코드중 잘못된 부분을 수정해 주세요
+function clone(object){
+  let temp = [];
+  for(let key in object){
+    temp[key] = object[key];
+  }
+  return temp;
+}
+let espresso = ['espresso'];
+
+let americano = clone(espresso);
+let caffeLatte = clone(espresso);
+
+americano.push('water');
+caffeLatte.push('milk');
+
+// 여기에 caffeMocha와 vanillaLatte 레시피를 만들어 주세요
+let caffeMocha = clone(caffeLatte);
+let vanillaLatte = clone(caffeLatte);
+caffeMocha.push('chocolateSyrup');
+vanillaLatte.push('vanillaSyrup');
+
+// 테스트 코드
+console.log(espresso);
+console.log(americano);
+console.log(caffeLatte);
+console.log(caffeMocha);
+console.log(vanillaLatte);
