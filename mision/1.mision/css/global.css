@@ -1,6 +1,14 @@
 /* font area */
 .intro .cont-wrap span{font-family: "Abhaya Libre", serif;}
-.head .login, .section .wrap, .intro .padding-box strong, .intro .padding-box p, .foot .foot-wrap, .foot .foot-copyright{
+.head .login,
+.section .wrap,
+.intro .padding-box strong,
+.intro .padding-box p,
+.foot .foot-wrap,
+.foot .foot-copyright,
+.login-area form,
+.login-area .Easy-login,
+.login-area p{
     font-family: 'Pretendard-Regular';
 }
 .head .face span{font-family: 'ROKAF Sans';}
@@ -15,4 +23,4 @@
 header{position: sticky; top: 0; left: 0; background-color: #ffffff; border-bottom: 1px solid #dfdfdf;}
 
 /* 로그인 페이지 그로벌 영역 */
-.login_contsize{max-width: 640px; margin: 0 auto; padding-top: 250px;}
+.login_contsize{width: 640px; margin: 0 auto; padding-block: 231px;}
