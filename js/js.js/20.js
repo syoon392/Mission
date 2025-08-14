@@ -20,3 +20,19 @@ for (let i = 0; i < groups.length; i++){
 // 테스트 코드
 console.log(teams[0]);
 console.log(teams[1]);
+
+
+
+let a = Math.floor(Math.random() * 10) + 1; 
+function factorial(n) {
+    let result = 1;
+
+    for (let i = 1; i <= n; i++) {
+        result *= i;
+    }
+
+    console.log(`n = ${a}`);
+    return result;
+}
+
+console.log(`n! = ${factorial(a)}`);
