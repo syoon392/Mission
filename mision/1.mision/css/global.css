@@ -11,8 +11,7 @@
 .login-area p{
     font-family: 'Pretendard-Regular';
 }
-.head .face span{font-family: 'ROKAF Sans';}
-/* palette */
+
 
 
 .intro span{color: #3692ff; font-size: 18px; font-weight: 800; line-height: 26px;}
@@ -21,6 +20,3 @@
 .foot-copyright:nth-child(1){color: #9ca3af; min-width: 112px;}
 .foot-copyright li:nth-child(2){color: #e5e7eb;}
 header{position: sticky; top: 0; left: 0; background-color: #ffffff; border-bottom: 1px solid #dfdfdf;}
-
-/* 로그인 페이지 그로벌 영역 */
-.login_contsize{width: 640px; margin: 0 auto; padding-block: 231px;}

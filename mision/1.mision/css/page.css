@@ -48,38 +48,18 @@ footer .foot-copyright .ikon li:nth-child(3) a{background: url(../img/youtube.pn
 footer .foot-copyright .ikon li:nth-child(4) a{background: url(../img/instagram.png)no-repeat center / cover;}
 
 /* 로그인 페이지 영역 */
+.signUp, .login{margin: 0 auto; } 
 .login-head{
     display: flex;
-    align-items: center;
-    max-width: 396px;
-    margin: 0 auto;
-    gap: 22.24px;
-    margin-bottom: 40px;  
+    align-items: center; 
     color: var(--blue);
 }
-.login-head h1{
-    padding-block: 23.99px 18.02px;
-    font-size: 72.28px;
-    font-weight: 700;
-    line-height: 90px;
-    
-}
-.login-panda{
-    width: 103.54px;
-    aspect-ratio: 103.54 / 103.89;
-    padding-block: 13px 15.14px;
-}
 form{display: flex; flex-direction: column;}
-label{margin-bottom: 16px; font-size: 18px; font-weight: 700; line-height: 26px; width: 100%;}
-input{margin-bottom: 24px; border: none;} 
 .text{padding: 20.5px; background-color: var(--gray100); border-radius: 15px;}
-#submit{background-color: var(--blue); padding: 12px; border-radius: 50px; cursor: pointer; color: var(--gray100); font-size: 20px; font-weight: 600; line-height: 32px;}
+#submit{background-color: var(--blue); border-radius: 50px; cursor: pointer; color: var(--gray100); font-size: 20px; font-weight: 600;}
 .Easy-login{display: flex; align-items: center; padding: 16px 23px; gap: 16px; margin-bottom: 24px;} 
 .Easy-login span{flex-grow: 1; line-height: 26px; font-weight: 500;}
 .Easy-login .google{background: url(../img/google.png);width: 42px; aspect-ratio: 1;}
 .Easy-login .kakao{background: url(../img/kakao.png);width: 42px; aspect-ratio: 1;}
 .login-area > p{text-align: center; font-size: 14px; font-weight: 500;line-height: 24px; color: var(--gray800);}
 .login-area > p .sign-up{text-decoration: underline; color: var(--blue); margin-left: 5px;}
- 
-/* sign-up */
-.login-area form .Name{line-height: 21px;}
